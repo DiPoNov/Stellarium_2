@@ -1,0 +1,10 @@
+{
+	"id": "EarthTilt",
+	"name": "Earth Tilt Tweaker",
+	"version": "0.1.0",
+	"license": "GPL-2.0+",
+	"description": "Allows changing Earth's obliquity manually.",
+	"author": "Your Name",
+	"startByDefault": true,
+	"dependencies": []
+}
