@@ -39,7 +39,7 @@ class StelGeodesicGrid;
 class StelMovementMgr;
 class StelObserver;
 
-//! @class StelCore
+//! @class 
 //! Main class for Stellarium core processing.
 //! This class provides services like management of sky projections,
 //! tone conversion, or reference frame conversion. It is used by the
@@ -72,6 +72,11 @@ class StelCore : public QObject
 	Q_PROPERTY(DitheringMode ditheringMode READ getDitheringMode WRITE setDitheringMode NOTIFY ditheringModeChanged)
 
 public:
+	// --- HACK START ---
+	// Статическая переменная, чтобы плагин мог её менять без доступа к объекту
+	static double hackObliquityDegree; 
+	static bool useHackObliquity;
+	// --- HACK END ---
 	//! @enum FrameType
 	//! Supported reference frame types
 	enum FrameType
