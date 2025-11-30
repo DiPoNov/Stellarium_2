@@ -549,6 +549,7 @@ ENDMACRO()
 
 #### demo plugins ####
 ADD_PLUGIN(HelloStelModule 0)
+ADD_PLUGIN(EarthTilt 1)
 ADD_PLUGIN(SimpleDrawLine 0)
 #### work plugins ####
 ADD_PLUGIN(AngleMeasure 1)
